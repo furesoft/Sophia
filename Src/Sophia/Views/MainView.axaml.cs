@@ -28,7 +28,7 @@ public partial class MainView : UserControl
         var p = new Dictionary<string, string>();
         var l = new HashSet<string>();
         p.Add("How Much", "Very Much");
-        l.Add("Label on a node!");
+        l.Add("Label on a node");
         connection.CreateRelation(
         "Likes", 
         sn => sn.First(x => x.Hash == nodeOne.Hash), tn => tn.First(a => a.Hash == nodeTwo.Hash), p, l);
